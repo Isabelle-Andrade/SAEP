@@ -18,6 +18,8 @@ return new class extends Migration
             //Exclusão em cascata -> se um registro da tabela produtos for excluído, todos
             //os registros da tabela atual que referenciam esse produto_id também serão
             //apagados automaticamente 
+            $table->integer('quantidade');
+            $table->enum('tipo', ['entrada', 'saida']);
             $table->timestamps();
         });
     }

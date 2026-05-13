@@ -8,7 +8,7 @@ use App\Models\Produto;
 class Movimento extends Model
 {
     protected $fillable = [
-        'nome', 'marca', 'estoque'
+        'produto_id', 'quantidade', 'tipo'
     ];
 
     public function produto(){
